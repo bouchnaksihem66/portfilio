@@ -1,181 +1,78 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio – Sihem</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        header,
-        footer {
-            background: #156fb8;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        section {
-            padding: 40px;
-        }
-        
-        h2 {
-            color: #1f99b5;
-        }
-        
-        .work-item {
-            margin-bottom: 20px;
-        }
-        
-        form input,
-        form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-        }
-        
-        form button {
-            padding: 10px 20px;
-            background: #161245;
-            color: white;
-            border: none;
-        }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        
-        table,
-        th,
-        td {
-            border: 1px solid #666;
-        }
-        
-        th,
-        td {
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Sihem Bouchnak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <!-- NAVBAR -->
-    <header>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="#media">Media</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- SECTION HOME -->
-    <section id="home">
-        <h1>Bienvenue sur mon Portfolio</h1>
-        <p>Je suis <strong>Sihem</strong>, étudiante en technologie informatique.</p>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hi! I'm Sihem Bouchnak, a web developer passionate about creating beautiful and responsive designs.</p>
+  </section>
 
-        <!-- Vidéo -->
-        <h3>Ma Vidéo</h3>
-        <video width="400" controls>
-      <source src="vidéo.mp4" type="video/mp4">
-      Votre navigateur ne supporte pas la vidéo.
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Portfolio website built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>site web sur iset tataouine</p>
+      </div>
+      <h3>My Video</h3>
+    <video controls class="media-video">
+      <source src="védio.mp4" type="video/mp4">
     </video>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>Simple blog website with responsive design and animations.</p>
+      </div>
+    </div>
+  </section>
 
-        <!-- Audio -->
-        <h3>Audio de présentation</h3>
-        <audio controls>
-      <source src="test.mp3" type="audio/mp3">
+  <!-- Media Section -->
+  <section id="media" class="section">
+    <h2>Media</h2>
+
+    <h3>My Image</h3>
+    <img src="img1.jpeg" alt="My Image" class="media-img">
+
+    
+
+    <h3>My Audio</h3>
+    <audio controls>
+      <source src="test.mp3" type="audio/mpeg">
     </audio>
-    </section>
+  </section>
 
-    <!-- SECTION ABOUT -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Je suis une étudiante passionnée par l'informatique et le développement web.</p>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: sihem.bouchnak@example.com</p>
+    <p>Phone: +216 99 999 999</p>
+  </section>
 
-        <h3>Mes compétences</h3>
-        <ul>
-            <li>HTML / CSS</li>
-            <li>JavaScript</li>
-            <li>Design Graphique</li>
-            <li>Traitement de données multimédias</li>
-        </ul>
-    </section>
-
-    <!-- SECTION WORK -->
-    <section id="work">
-        <h2>My Work</h2>
-
-        <div class="work-item">
-            <h3>Projet 1 : Site Web</h3>
-            <p>Description rapide du projet.</p>
-        </div>
-
-        <div class="work-item">
-            <h3>Projet 2 : Application JS</h3>
-            <p>Projet basé sur JavaScript avec logique dynamique.</p>
-        </div>
-    </section>
-
-    <!-- SECTION RESUME -->
-    <section id="resume">
-        <h2>Resume</h2>
-
-        <table>
-            <tr>
-                <th>Année</th>
-                <th>Formation / Expérience</th>
-            </tr>
-            <tr>
-                <td>2024–2025</td>
-                <td>Étudiante – ISET Tataouine</td>
-            </tr>
-            <tr>
-                <td>2024</td>
-                <td>Stage à Tunisie Telecom</td>
-            </tr>
-        </table>
-    </section>
-
-    <!-- SECTION CONTACT -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <form>
-            <label>Nom :</label>
-            <input type="text" name="nom" required>
-
-            <label>Email :</label>
-            <input type="email" name="email" required>
-
-            <label>Message :</label>
-            <textarea name="message" rows="5"></textarea>
-
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2025 - Portfolio Sihem | Tous droits réservés</p>
-    </footer>
+  <footer class="footer">
+    <p>&copy; 2025 Sihem Bouchnak</p>
+  </footer>
 
 </body>
-
 </html>
